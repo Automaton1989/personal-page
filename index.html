@@ -10,7 +10,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script src="js/link-page.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -25,11 +25,11 @@
 				>
 					<img
 						class="text-light"
-						src="#"
+						src="/images/northeastern-logo.png"
 						alt="Northeastern Logo Image"
 					/>
-					<span class="text-light fs-4">
-						Web Development Project #1
+					<span style = "margin-left: 1rem;" class="text-light fs-4">
+						Personal Website
 					</span>
 				</a>
 			</header>
@@ -69,9 +69,9 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 					<div class="card bg-dark">
 						<img
-							src="..."
+							src="/images/pacman-game.png"
 							class="bg-dark text-light card-img-top"
-							alt="..."
+							alt="Pacman Game Image"
 						/>
 						<div class="card-body text-center">
 							<h3 class="card-title text-light">
@@ -85,8 +85,8 @@
 						</div>
 						<div class="card-footer">
 							<button
-								onClick="playPacman()"
 								class="btn btn-outline-light"
+								onclick="location.href='/pacman.html'"
 							>
 								Play Game!
 							</button>
@@ -96,9 +96,9 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 					<div class="card bg-dark">
 						<img
-							src="..."
+							src="/images/myriathon-website.png"
 							class="bg-dark text-light card-img-top"
-							alt="..."
+							alt="Myriathon Website Screenshot"
 						/>
 						<div class="card-body text-center">
 							<h3 class="card-title text-light">
@@ -115,7 +115,7 @@
 								onClick="viewMyriathon()"
 								class="btn btn-outline-light"
 							>
-								Play Game!
+								View Website!
 							</button>
 						</div>
 					</div>
@@ -123,9 +123,9 @@
 				<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
 					<div class="card bg-dark">
 						<img
-							src="..."
+							src="/images/lcs-page.png"
 							class="bg-dark text-light card-img-top"
-							alt="..."
+							alt="LCS Stock Exchange Screenshot"
 						/>
 						<div class="card-body text-center">
 							<h3 class="card-title text-light">
@@ -144,7 +144,7 @@
 								onClick="viewLCS()"
 								class="btn btn-outline-light"
 							>
-								Play Game!
+								View Github!
 							</button>
 						</div>
 					</div>
@@ -164,6 +164,11 @@
 						program. As of right now, I have no regrets, and happy
 						to be a Husky!
 					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<h2 class="text-light">Hobbies And Interests</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -223,7 +228,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="p-5 mb-4 bg-dark rounded-3">
+			<div id = "contact" class="p-5 mb-4 bg-dark rounded-3">
 				<div class="container-fluid py-5 text-center">
 					<h2 class="text-light display-5">Contact</h1>
 					<p class="text-light fs-4">
