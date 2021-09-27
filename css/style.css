@@ -24,6 +24,11 @@ header img
 	width: 100%;
 }
 
+.my-cards
+{
+	margin-bottom: 1rem;
+}
+
 .card 
 {
 	width: 100%;
