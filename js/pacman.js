@@ -1,19 +1,23 @@
 let pacman = {
-  x: 4,
-  y: 4
+  x: 7,
+  y: 5
 }
 
 let map = [
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-  [1, 3, 3, 3, 2, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 2, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 5, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
-  [1, 3, 3, 3, 3, 3, 3, 3, 3, 1],
-  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 2, 1],
+  [1, 3, 3, 1, 3, 3, 1, 1, 1, 3, 3, 1, 3, 3, 1],
+  [1, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1],
+  [1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+  [1, 3, 3, 3, 3, 3, 3, 5, 3, 3, 3, 3, 3, 3, 1],
+  [1, 2, 1, 1, 3, 3, 1, 1, 1, 3, 3, 1, 1, 2, 1],
+  [1, 3, 3, 3, 3, 3, 1, 4, 1, 3, 3, 3, 3, 3, 1],
+  [1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+  [1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1],
+  [1, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1],
+  [1, 3, 3, 1, 3, 3, 1, 1, 1, 3, 3, 1, 3, 3, 1],
+  [1, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 2, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
 
 var score = 0
@@ -26,6 +30,8 @@ var newScore = document.getElementById('score').style.display = 'none'
 
 function playGame() {
   let remove = document.getElementById('play').style.display = 'none'
+  let result = document.getElementById('result').innerHTML = ' '
+  document.getElementById('result').style.display = 'none'
   newScore = document.getElementById('score').style.display = 'block'
   drawWorld()
 }
@@ -93,6 +99,16 @@ document.onkeydown = function (event) {
       newScore = document.getElementById('score').innerHTML = ''
       score += 10
       newScore = document.getElementById('score').innerHTML = score
+    }
+    if (map[pacman.y - 1][pacman.x] === 4) {
+      document.getElementById('result').style.display = 'block'
+      result = document.getElementById('result').innerHTML = 'GAME OVER!\n YOUR SCORE IS: ' + score
+      endScore = document.getElementById('score').style.display = 'none'
+      board.innerHTML = ' '
+      playGame = document.getElementById('play').style.display = 'inline'
+      map[pacman.y][pacman.x] = 3
+      pacman.x = 7
+      pacman.y = 5
     }
     if (map[pacman.y - 1][pacman.x] !== 1) {
       map[pacman.y][pacman.x] = 3
