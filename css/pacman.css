@@ -1,0 +1,50 @@
+body {
+	background-color: #212121;
+}
+
+header img {
+	width: 30px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+#pacman-world {
+	margin-top: 1rem;
+	line-height: 0rem;
+}
+
+.wall {
+	width: 50px;
+	height: 50px;
+	/* background-image: url('wall.png'); */
+	background-color: blue;
+	display: inline-block;
+}
+.coin {
+	width: 50px;
+	height: 50px;
+	/* background-image: url('coin.png'); */
+	background-color: darkred;
+	display: inline-block;
+}
+.ground {
+	width: 50px;
+	height: 50px;
+	/* background-image: url('bg.png'); */
+	background-color: black;
+	display: inline-block;
+}
+.ghost {
+	width: 50px;
+	height: 50px;
+	/* background-image: url('ghost1.png'); */
+	background-color: lightcyan;
+	display: inline-block;
+}
+.pacman {
+	width: 50px;
+	height: 50px;
+	/* background-image: url('pacman.png'); */
+	background-color: yellow;
+	display: inline-block;
+}
