@@ -31,8 +31,7 @@ Dependencies:
     "eslint-plugin-promise": "^5.1.0",
 * Bootstrap 5.1 was used for styling.
 
-<<<<<<< HEAD
+
 This repo is public, so feel free to pull this project
 =======
 This repo is public, so feel free to pull this project
->>>>>>> a9c75b7bf50805325d4d3249f097d87b9bb9a570
