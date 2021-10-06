@@ -2,7 +2,7 @@
 
 ## Author: Matthew Vargas
 
-## Prooject Deployed link -> [Github Pages](https://fautomaton.github.io/)
+## Project Deployed link -> [Github Pages](https://fautomaton.github.io/)
 
 ## Class: [CS 5610 Web Development Fall 2021](https://johnguerra.co/classes/webDevelopment_fall_2021/_)
 
