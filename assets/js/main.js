@@ -3,5 +3,5 @@ function viewMyriathon() {
 }
 
 function viewLCS() {
-  window.open('/https://github.com/Automaton1989/LeagueStockMarket')
+  window.open('https://github.com/Automaton1989/LeagueStockMarket')
 }
