@@ -10,6 +10,10 @@
 
 The purpose of this project was to display competencies in HTML, CSS, and basic Javascript.  By making a page which gives a background on myself, as well as my interests and plans for the future, I can use the skills developed in the early weeks of the course to create a clean, javascript built website.
 
+## Project Video
+
+[YouTube Video](https://www.youtube.com/watch?v=GWMmKVX7-98)
+
 ## Project Images
 
 Screenshots of project are stored in my Google Drive.  Links is below:
