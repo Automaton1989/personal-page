@@ -20,13 +20,13 @@ let map = [
   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
 
-var score = 0
+let score = 0
 
-var board = document.getElementById('pacman-world')
+let board = document.getElementById('pacman-world')
 
-var button = document.getElementById('play').addEventListener('click', playGame)
+let button = document.getElementById('play').addEventListener('click', playGame)
 
-var newScore = document.getElementById('score').style.display = 'none'
+let newScore = document.getElementById('score').style.display = 'none'
 
 function playGame() {
   let remove = document.getElementById('play').style.display = 'none'
