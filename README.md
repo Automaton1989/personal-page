@@ -12,7 +12,9 @@ The purpose of this project was to display competencies in HTML, CSS, and basic 
 
 ## Project Images
 
-PLEASE ADD IMAGES HERE
+Screenshots of project are stored in my Google Drive.  Links is below:
+
+[Google Drive Link](https://drive.google.com/drive/folders/1I9tSxnQfMDYJoKCJGOLLQZAk-p2e9ZCx?usp=sharing)
 
 ## Build Dependencies and Instructions
 
@@ -29,4 +31,8 @@ Dependencies:
     "eslint-plugin-promise": "^5.1.0",
 * Bootstrap 5.1 was used for styling.
 
+<<<<<<< HEAD
 This repo is public, so feel free to pull this project
+=======
+This repo is public, so feel free to pull this project
+>>>>>>> a9c75b7bf50805325d4d3249f097d87b9bb9a570
