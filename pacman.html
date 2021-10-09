@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta
+			name="description"
+			content="Please enjoy my Pacman Game!  I hope you enjoy it!"
+		/>
+
+		<meta name="author" content="Matthew Vargas" />
+
+		<meta
+			name="keywords"
+			content="Portfolio, Student, Home, Home Page, Northeastern, Web Development, Matthew, Matthew Vargas, Pacman, Game"
+		/>
+
 		<title>Personal Website | Pacman</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -36,24 +49,26 @@
 			</header>
 			<div class="row">
 				<div class="text-light text-center col-12">
-					<h1>Pacman - Please play on a Large-XLarge screen!</h1>
+					<h1>Pacman</h1>
 					<h3 id="score">0</h3>
 					<button id="play" class="btn btn-outline-light">
 						Play Game?
 					</button>
-					<h3 id="result"></h3>
+					<h3 class = "d-none d-sm-none d-md-none d-large-block d-xl-block col-lg-12 col-xl-12" id="result"></h3>
 				</div>
 			</div>
 			<div class="row">
-				<div class="text-center col-12">
+				<div class="text-center d-none d-sm-none d-md-none d-large-block d-xl-block col-lg-12 col-xl-12">
 					<div id="pacman-world"></div>
 				</div>
-			</div>
-			<div>
-				<div class="row text-center">
-					<div class="col-12">
-						<h3 class="text-light">WORK IN PROGRESS</h3>
-					</div>
+				<div class = "text-center col-sm-block col-md-block d-lg-none">
+					<h3 class = "text-light">
+						Please play on Large or XL Screen!  In the meantime, here's a Pacman video instead :)
+					</h3>
+					<p class = "text-light">
+						Please be sure to stop the video if you change the browser size, otherwise you'll hear the video when it's not on screen :)
+					</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/dScq4P5gn4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
