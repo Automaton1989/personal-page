@@ -1,3 +1,9 @@
+/*
+Pacman Javascript Code
+
+Create Pacman coordinates, and build the map for the game
+*/
+
 let pacman = {
   x: 7,
   y: 5
@@ -19,7 +25,10 @@ let map = [
   [1, 2, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 2, 1],
   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ]
-
+/*
+Create variables for score, and make connections to html for the game board, 
+button, and updating score
+*/
 let score = 0
 
 let board = document.getElementById('pacman-world')
@@ -28,6 +37,10 @@ let button = document.getElementById('play').addEventListener('click', playGame)
 
 let newScore = document.getElementById('score').style.display = 'none'
 
+/*
+Function which starts the game when the play button is pressed.  Makes connections
+for removing the play button, adding a result to the html for score, and adding the board
+*/
 function playGame() {
   let remove = document.getElementById('play').style.display = 'none'
   let result = document.getElementById('result').innerHTML = ' '
@@ -35,6 +48,14 @@ function playGame() {
   newScore = document.getElementById('score').style.display = 'block'
   drawWorld()
 }
+/*
+Drawing the board requires going through the map, and checking for specific ints:
+1 = wall
+2 = coin
+3 = ground to walk on for Pacman
+4 = Ghost character
+5 = Pacman character
+*/
 
 function drawWorld() {
   board.innerHTML = ''
@@ -59,6 +80,13 @@ function drawWorld() {
     board.innerHTML += '<br>'
   }
 }
+/*
+When the arrow keys are used, Pacman moves around the board.  Things to consider:
+-> When hitting a wall, don't move
+-> When hitting a coin, increase score and change result display on html
+-> When hitting a ghost, Pacman disappears and game is over
+-> When a legal move is made and the above is not conditionally met, then just move
+*/
 
 document.onkeydown = function (event) {
   /* console.log(event) */
