@@ -12,7 +12,7 @@ The purpose of this project was to display competencies in HTML, CSS, and basic 
 
 ## Project Video
 
-[YouTube Video](https://www.youtube.com/watch?v=GWMmKVX7-98)
+[YouTube Video](https://youtu.be/i6g00fIk_5s)
 
 ## Project Images
 
